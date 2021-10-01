@@ -1,6 +1,6 @@
 import sys
 
-def replus(a: float, b: float):
+def replus(a: float, b: float) -> float:
     return (a*b)/(a+b)
 
 if __name__ == "__main__":
@@ -9,5 +9,5 @@ if __name__ == "__main__":
         print("usage: python3 {0} <a> <b>".format(sys.argv[0]))
         sys.exit(0)
 
-    r = replus(float(sys.argv[2]), float(sys.argv[2]))
+    r = replus(float(sys.argv[1]), float(sys.argv[2]))
     print("%.2f" % r)
